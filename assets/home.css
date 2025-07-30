@@ -1,0 +1,77 @@
+/* css/home.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* PROPERTI UNTUK WALLPAPER KESELURUHAN HALAMAN */
+    /* Pastikan path gambar ini benar relatif terhadap lokasi file home.css */
+    background-image: url('../assets/images/restoran_wallpaper.jpg'); /* Perhatikan '..' untuk naik satu folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Membuat efek paralaks */
+    color: #333; /* Default warna teks gelap */
+}
+
+/* Overlay gelap untuk meningkatkan keterbacaan teks di atas wallpaper */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 152, 0, 0.45); /* Hitam dengan opacity 45%. Coba sesuaikan nilai ini! */
+    z-index: -1;
+}
+
+/* Navbar: Sedikit transparan agar wallpaper sedikit terlihat */
+.navbar {
+    background-color: rgba(180, 83, 9, 0.85); /* Kuning tua original dengan opacity 85% */
+}
+.navbar a {
+    color: white; /* Pastikan link di navbar tetap putih */
+}
+
+/* Hero Section (Selamat Datang): Latar belakang putih semi-transparan dengan blur */
+.hero-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Putih dengan opacity 80% */
+    backdrop-filter: blur(5px); /* Efek blur pada background di belakang elemen ini */
+    -webkit-backdrop-filter: blur(5px); /* Untuk kompatibilitas browser lama */
+}
+
+/* Section lain (Menu, Tentang, Kontak): Latar belakang putih semi-transparan */
+.content-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Putih dengan opacity 90% */
+    border-radius: 0.5rem; /* Tambahkan sedikit border-radius */
+    padding: 2.5rem; /* Tambahkan padding agar tidak terlalu mepet */
+    margin-top: 2.5rem; /* Beri jarak antar section */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+/* Card Menu di Section Menu Andalan: Latar belakang putih semi-transparan */
+.menu-card {
+    background-color: rgba(255, 255, 255, 0.95); /* Putih dengan opacity 95% */
+    border-radius: 0.5rem;
+    overflow: hidden; /* Penting untuk gambar di dalam card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Warna Teks: Pastikan kontras dengan background */
+h1, h2, h3 {
+    color: #d97706; /* Kuning tua original */
+}
+p, span.font-bold {
+    color: #000000ff; /* Abu-abu gelap */
+}
+a.bg-yellow-600 {
+    background-color: #d97706; /* Kuning tua */
+    color: white;
+}
+a.bg-yellow-600:hover {
+    background-color: #b45309; /* Lebih gelap saat hover */
+}
+
+/* Footer: Warna yang sama dengan navbar atau menyesuaikan */
+.footer {
+    background-color: rgba(180, 83, 9, 0.85); /* Sama dengan navbar */
+    color: white;
+}
