@@ -26,7 +26,8 @@ Password : 123
 <img width="1918" height="971" alt="image" src="https://github.com/user-attachments/assets/5a0011e3-c217-4bc8-8740-ce83d1aa64df" />
 <img width="1919" height="963" alt="image" src="https://github.com/user-attachments/assets/2cfb07b4-50ce-4ac4-af8e-0e692e537cf1" />
 <img width="1919" height="973" alt="image" src="https://github.com/user-attachments/assets/60085158-6f7f-473c-9962-be1b58eb1846" />
-## Contributors
+
+#### Contributors
 Muhammad Ramadien Rizky Darmawan
 Gunakan Aplikasi dengan bijak, dan Selamat Belajar
 "Dukungan Anda sangat berarti! Jika Anda merasa proyek ini berguna, silakan berikan bintang di repository ini jangan lupa bintang nya hehe. Terima kasih!"
