@@ -1,0 +1,58 @@
+/* style.css */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Anda bisa menambahkan .menu-card dari petugas di sini jika perlu, meskipun tidak dipakai di admin */
+.menu-card {
+    transition: transform 0.2s;
+}
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+/* Style untuk input uang dibayar (meskipun tidak langsung dipakai di admin, bisa disimpan jika ada rencana) */
+#uang_dibayar {
+    border-color: #d1d5db; /* gray-300 */
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem; /* rounded-lg */
+}
+#uang_dibayar:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.5); /* ring-2 focus:ring-yellow-500 */
+}
+/* CSS untuk tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Atas elemen */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Atas elemen */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
